@@ -2,9 +2,121 @@
     font-family: 'Roboto',sans-serif;
     box-sizing:border-box;    
     text-shadow:1px 1px 1px black;
+    
+    
+    
 }
 
 .body{
     background-color:#990099;
     color:#fff;
+}
+
+.aboutMe{
+    padding-left: 1rem;
+}
+
+
+.hardSkills{
+    display:flex;
+    flex-direction: row;
+    list-style-type:none;
+    justify-content: center;
+}
+
+.hardSkill-icon{
+    width:70%;
+    height:70%;
+    display:flex;
+    flex-direction: column;
+    grid-template-rows: 3fr 3fr;
+    justify-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .contact{
+        position:absolute;
+        top:25%;
+        left:75%;
+        font-size:larger;        
+    }
+    .foto-perfil {
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .contact{
+        position: absolute;
+        top: 35%;
+        left: 75%;
+        font-size: larger;
+        
+    }
+    .contactinfo{
+        justify-content: left;
+    }
+    .acordeon.open .content{
+        text-align:justify;
+    }
+    .li{
+        font-size:larger;
+    }
+    .foto-perfil {
+        width: 70%;
+        height: 70%;
+        border-radius: 70%;
+    }
+}
+
+
+
+@media only screen and (min-width: 1440px) {   
+    .acordeon{
+        font-size:1.6rem;
+    }
+    .acordeon.open .content{
+        text-align:justify;
+    }
+    .contact{
+        position: absolute;
+        top: 30%;     
+        left:75%; 
+        justify-content: flex-start;
+    }
+    .contactinfo {
+        display: flex;
+        padding: 0.5rem;
+        margin: 0.5rem;
+        flex-direction: column;
+        justify-content: center;
+        border: 2px solid;
+        border-radius: 5px;        
+        align-items: stretch;
+        flex-wrap:wrap;
+        font-size:1.6rem;
+    
+    }
+    .li{
+        font-size:1.6rem;
+    }
+}
+@media only screen and (min-width: 2560px) {
+    .acordeon{
+        font-size:3rem;
+    }
+    .acordeon.open .content{
+        text-align:justify;
+    }
+    .contactinfo{
+        font-size:3rem;
+    }
+
+    .li{
+        font-size:3rem;
+    }
+    
 }
